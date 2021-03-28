@@ -1,13 +1,20 @@
 pipeline {
-    agent any
+    agent any 
     stages {
-        stage('Build') {
+        stage('Build') { 
             steps {
-                //echo 'Running build automation' > test.txt
-                  }
+                // 
+            }
         }
-        stage('test') {
-	}
+        stage('Test') { 
+            steps {
+                // 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                // 
+            }
+        }
     }
 }
-
