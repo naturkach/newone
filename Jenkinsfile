@@ -8,13 +8,13 @@ pipeline {
                 archiveArtifacts artifacts: 'test.txt'
             }
         }
-        stage('Build Docker Image') {           
-            steps {
-                script {
-                       app = docker.build("naturkach/mybuild)                   
-                       }
-                  }
-        }
+//       stage('Build Docker Image') {           
+//            steps {
+//                script {
+//                       app = docker.build("naturkach/mybuild)                   
+//                       }
+//                  }
+//        }
     }
 }
 
