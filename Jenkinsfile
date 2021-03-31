@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Running build automation'
+                echo 'Running build automation' > test.txt
 //                archiveArtifacts artifacts: 'test.txt'
             }
         }
