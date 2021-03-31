@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Running build automation' > test.txt
-                archiveArtifacts artifacts: 'test.txt'
+                echo 'Running build automation'
+//                archiveArtifacts artifacts: 'test.txt'
             }
         }
 //       stage('Build Docker Image') {           
