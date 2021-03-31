@@ -4,9 +4,15 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Running build automation' 
-                archiveArtifacts artifacts: 'test.zip'
+                echo 'Running build automation'                 
             }
+        }
+        stage('Build Docker Image') {            
+            steps {
+                script {                    
+                       app = docker.build("naturkach/petclinic")
+                       }
+                  }
         }
   }
 }
